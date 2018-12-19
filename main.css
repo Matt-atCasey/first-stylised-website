@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(255, 212, 219);
+}
+
+.navDefault {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: lightblue;
+}
+
+button {
+  border: none;
+  letter-spacing: 1px;
+  background-color: lightpink;
+  width: 150px;
+  height: 50px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: 150px;
+  background-color: lightblue;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: transform .5s ease-in-out;
+}
+
+.dropdownLink {
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: block;
+  color: rgb(253, 137, 154);
+  padding: 10px 5px;
+  transition: box-shadow .5s ease-in-out, color .5s ease-in-out;
+}
+
+.dropdownLink:hover {
+  background-color: rgba(159, 229, 252, 0.39);
+  box-shadow: 6px 6px 40px -12px rgba(0, 0, 0, 0.75);
+  color: rgb(255, 85, 110);
+}
+
+.dropdown {
+  width: 150px;
+  position: relative;
+}
+
+.dropdown:hover button {
+  background-color: rgb(255, 155, 170);
+}
+
+.dropdown:hover .dropdownMenu {
+  transform: translateY(0);
+}
